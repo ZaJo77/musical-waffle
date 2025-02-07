@@ -16,7 +16,8 @@ class Shelter
         pets.each do |name|
             call_pets << "#{name}!"
         end
-        
         call_pets
     end
+
+    def over_capacity
 end
