@@ -5,22 +5,22 @@ RSpec.describe Shelter do
 
   # Iteration 1
   describe '#initialize' do
-    xit 'is a Shelter' do
+    it 'is a Shelter' do
       shelter = Shelter.new('Denver Animal Shelter', 5)
       expect(shelter).to be_a(Shelter)
     end
 
-    xit 'can read the name' do
+    it 'can read the name' do
       shelter = Shelter.new('Denver Animal Shelter', 5)
       expect(shelter.name).to eq('Denver Animal Shelter')
     end
 
-    xit 'can read the capacity' do
+    it 'can read the capacity' do
       shelter = Shelter.new('Denver Animal Shelter', 5)
       expect(shelter.capacity).to eq(5)
     end
 
-    xit 'has no pets by default' do
+    it 'has no pets by default' do
       shelter = Shelter.new('Denver Animal Shelter', 5)
       expect(shelter.pets).to eq []
     end
