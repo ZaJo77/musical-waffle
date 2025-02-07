@@ -6,5 +6,17 @@ class Shelter
         @capacity = capacity
         @pets = []
     end
-end
 
+    def add_pet(name)
+        pets << name
+    end
+
+    def call_pets
+        call_pets = []
+        pets.each do |name|
+            call_pets << "#{name}!"
+        end
+        
+        call_pets
+    end
+end
